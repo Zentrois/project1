@@ -89,7 +89,7 @@
         <script src="{{ asset('backend/assets/js/pages/dashboard.init.js') }}"></script>
 
         <!-- App js -->
-        <script src="{{ asset('backend/') }}"></script>
+        <script src="{{ asset('backend/assets/js/app.js') }}"></script>
     </body>
 
 </html>
