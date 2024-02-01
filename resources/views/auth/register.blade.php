@@ -4,7 +4,7 @@
 <head>
     
     <meta charset="utf-8" />
-    <title>Register | Upcube - Admin & Dashboard Template</title>
+    <title>Register | Z Project - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesdesign" name="author" />
@@ -82,7 +82,7 @@
 
                             <div class="form-group text-center row mt-3 pt-1">
                                 <div class="col-12">
-                                    <button class="btn btn-info w-100 waves-effect waves-light" type="submit">Register</button>
+                                    <button class="btn btn-danger w-100 waves-effect waves-light" type="submit">Register</button>
                                 </div>
                             </div>
 
