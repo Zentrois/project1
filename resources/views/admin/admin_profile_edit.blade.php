@@ -11,7 +11,8 @@
 
                         <h4 class="card-title">Edit Profile Page</h4>
 
-                        <form>
+                        <form method="POST" action="{{ route('store.profile') }}" enctype="multipart/form-data"> 
+                            @csrf
                             <div class="row mb-3">
                                 <label for="name" class="col-sm-2 col-form-label">Name</label>
                                 <div class="col-sm-10">
@@ -37,9 +38,9 @@
                             <!-- end row -->
 
                             <div class="row mb-3">
-                                <label for="image" class="col-sm-2 col-form-label">Profile Image</label>
+                                <label for="profile_image" class="col-sm-2 col-form-label">Profile Image</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="file" placeholder="Profile Image" name="image" id="image" value="">
+                                    <input class="form-control" type="file" placeholder="Profile Image" name="profile_image" id="profile_image" value="">
                                 </div>
                             </div>
                             <!-- end row -->
@@ -66,7 +67,7 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $('#image').change(function(e){
+        $('#profile_image').change(function(e){
             var reader = new FileReader();
             reader.onload = function(e){
                 $('#showImage').attr('src', e.target.result);
